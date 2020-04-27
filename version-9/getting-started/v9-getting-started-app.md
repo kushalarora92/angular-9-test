@@ -37,6 +37,8 @@ Services are an integral part of Angular applications. In Angular, a service is 
 
 Services are the place where you share data between parts of your application. For the online store, the cart service is where you store your cart data and methods.
 
+The [@Injectable()](https://angular.io/api/core/Injectable) { providedIn: 'root' } syntax allows `tree shaking`.
+
 ### `Pipes`
 The line, <h4>{{ product.price | currency }}</h4> uses the currency pipe to transform product.price from a number to a currency string. A pipe is a way you can transform data in your HTML template. For more information about Angular pipes, see Pipes.
 
